@@ -1,0 +1,7 @@
+/* css newbie here. suggestions for improvement welcome at hruvulum@gmail.com */
+body {
+        font-family: Helvetica,Arial,sans-serif;
+        margin: auto;
+        max-width: 40em; /* I prefer 35em, but gankra.github.io uses 45em */
+        margin-bottom: 8em; /* gankra.github.io/blah/style.css uses 15em but if the viewport is unusually short, it can take more than one press of the page-down key to scroll through the bottom margin, which runs the risk is disorienting the user. in fact I recall being momentarily disoriented by it today on my standard mbec / Chrome viewport of height 619px. */
+}
