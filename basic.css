@@ -1,6 +1,6 @@
 /* css newbie here. suggestions for improvement welcome at hruvulum@gmail.com */
 body {
         margin: auto;
-        max-width: 40em; /* I have in the past used 35em, but gankra.github.io uses 45em, and I really like that site, and gankra worked for Mozilla Research */
+        max-width: 40em; /* I used to use 35em, but gankra.github.io uses 45em, and I really like that site, and gankra worked for Mozilla Research */
         font-family: Helvetica,Arial,sans-serif;
 }
