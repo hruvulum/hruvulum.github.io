@@ -1,0 +1,15 @@
+
+2019 Nov 09.
+
+my discovering "margin: auto" was worth the 7.75 hours I spent on mbec today.
+
+regardless of the web page in the viewport, Chrome (version 78.0) on mbec will not narrow the viewport narrower than 500 px -- at least not in response to the user's dragging the L or R edge of the window with a pointing device.
+
+gankra.github.io/blah/style.css contains "margin-bottom: 15em", which is interesting in that it causes scrolling to behave somewhat as if the browser had been configured or modified to scroll "past the end of the page" (like, e.g., vi and emacs, but not TextEdit.app, do). however if the viewport is unusually short, it can take more than one press of the page-down key to scroll through the bottom margin, which runs the risk is disorienting the user. more importantly, I became momentarily disoriented or distracted me the first time I scrolled to the bottom of a page on gankra.github.io today even on my standard viewport of height 619px on Chrome on mbec. I prol distracted me mainly because it is unusual for a web page to behave that way.
+
+today I chose "max-width: 40em" on my ghpages site. on wry.me, I used 35em, but gankra.github.io uses 45em, and I really like that site, and gankra worked for Mozilla Research.  I would prefer to let the client (the software run by the user) decide the width, but I doubt that is practical because it goes against the mentality of the web. add 2019 Dec 09. jvns.ca uses #wrap { max-width: 45em; } whatever that means.
+
+note that ./publish uses rustdoc to convert markdown to html.
+
+https://zainamro.com/notes/unbearable-news ;; very minimalist
+

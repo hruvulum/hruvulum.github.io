@@ -1,0 +1,20 @@
+2019 Nov 09
+
+https://gankra.github.io/blah/swift-abi/ // How Swift Achieved Dynamic Linking Where Rust Couldn't. Alexis Beingessner ;; it simple unadorned web page with css and typographical choices I highly approve of. add. sadly its implementation is more complicated than I would like:
+$ wc -c blah/bootstrap*.css
+105948 blah/bootstrap.min.css
+16858 blah/bootstrap-responsive.min.css
+
+rustdoc have: --markdown-no-toc
+
+~/itech/gankra.github.io/blah/style.css ;; helped me a lot today. and I looked around the whole repo a lot today.
+
+hruvulum.github.io/201911090.html ;; published
+
+hn // [I blog at] https://alexanderell.is. I write on a simple static Hugo blog running on GitHub pages. I found that anything else makes tinkering too easy, which distracts me from the goal of writing. Writing often is hard enough, and I definitely don't need anything else getting in the way! ;; prol written in go. I glanced at https://gohugo.io/hosting-and-deployment/hosting-on-github/#readout
+
+do: inline css is prol faster than having a separate basic.css file as small as mine is. rustdoc has a switch for that that is used in the 9 identical files named build in ~/itech/gankra.github.io.
+
+do: we put <link rel="stylesheet" href="basic.css"> in a HEADER element (not HEAD element) which is prol an idiosyncratic place for it.
+
+

@@ -1,6 +1,6 @@
-/* css newbie here. suggestions for improvement welcome at hruvulum@gmail.com */
+/* css newbie here. suggestions for improvement welcome at hruvulum@gmail.com. I got the font-family from news.ycombinator.com/item?id=21841363 who uses also font-family: ui-monospaced, Menlo, monospace */
 body {
         margin: auto;
-        max-width: 40em;
+        max-width: 45em;
         font-family: Helvetica,Arial,sans-serif;
 }
