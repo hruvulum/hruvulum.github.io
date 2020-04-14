@@ -1,4 +1,6 @@
 #!/bin/bash
 rustdoc *.md -o .
+# make sure git is tracking any files produced by that last command line:
+git add *.html
 git commit -a -m '--'
 git push -u origin master
