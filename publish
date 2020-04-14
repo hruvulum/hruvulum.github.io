@@ -1,5 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 rustdoc *.md -o .
 git commit -a -m '--'
 git push -u origin master
-
