@@ -3,3 +3,4 @@
 # take only one input file.
 git commit -a -m '--'
 git push -u origin master
+echo reminder that changes take a few minutes to propagate to the web site
