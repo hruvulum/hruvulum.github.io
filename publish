@@ -1,5 +1,5 @@
 #!/bin/bash
-# we had `rustdoc *.md -o .` here, but that is a mistake because rustdoc can
+# we had `rustdoc *.md -o .` here, but that is wrong because rustdoc can
 # take only one input file.
 git commit -a -m '--'
 git push -u origin master
