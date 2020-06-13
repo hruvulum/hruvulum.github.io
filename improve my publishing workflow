@@ -1,6 +1,6 @@
 2019 Nov 09
 
-https://gankra.github.io/blah/swift-abi/ // How Swift Achieved Dynamic Linking Where Rust Couldn't. Alexis Beingessner ;; it simple unadorned web page with css and typographical choices I highly approve of. add. sadly its implementation is more complicated than I would like:
+https://gankra.github.io/blah/swift-abi/ // How Swift Achieved Dynamic Linking Where Rust Couldn't. Alexis Beingessner ;; a simple unadorned web page with css and typographical choices I highly approve of. add. sadly its implementation is more complicated than I would like:
 $ wc -c blah/bootstrap*.css
 105948 blah/bootstrap.min.css
 16858 blah/bootstrap-responsive.min.css
@@ -17,4 +17,7 @@ do: inline css is prol faster than having a separate basic.css file as small as 
 
 do: we put <link rel="stylesheet" href="basic.css"> in a HEADER element (not HEAD element) which is prol an idiosyncratic place for it.
 
+2020 Jun 02.
+
+https://news.ycombinator.com/item?id=23391110 ;; this made me believe that I should switch to Gitlab Pages.
 
