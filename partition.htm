@@ -3,22 +3,31 @@
 this file has the extension "htm" because by default github pages publishes
 only html files
 
+Model: Samsung SSD 970 EVO Plus 1TB (nvme)
+Disk /dev/nvme0n1: 1000GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags: 
+Number  Start   End     Size    File system     Name     Flags
+ 3      1049kB  1074MB  1073MB  fat32           ESP      boot, esp
+ 1      1074MB  987GB   986GB   ext4            primary
+ 2      987GB   1000GB  12.9GB  linux-swap(v1)  primary  swap
+
 information on the contents of our media kept separate from our computer. vlm0
 
 all of these dups were made with `tar cf /dev/rdisk3 -T /c/dupt` unless
 otherwise specified.
 
-8-gig cruzer #1. dup made 2019 Jul 31. stored at cata.
+8-gig cruzer #1. currently in my book bag in a CVS ctr. bootable fedora workstation 
+33 including gnome and a major browser.
 
-8-gig cruzer #2. dup made 2020 Apr 20. in the clever right corner of the
-hallway cubby where I used to keep a comb. [[[del: heavily used starting Mar or
-Apr 2019 to support commuting between mbmm and mbec. formatted ExFAT. :del]]]
+8-gig cruzer #2. dup made 2020 Apr 20. currently at cata.
 
 8-gig cruzer #3. dup made 2019 Nov 11. stored at cata. I tried something new
 and used dd rather than (bsd) tar to write to the backup media. dd took over 8
 hours.
 
-also /o/dup/full/ on hdtera contains 8-gig dups. e.g., one made 2020 Apr 14.
+also /o/dup/full/ on hdtera contains 8-gig dups. e.g., one made a few days before mbmm died.
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -26,9 +35,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-to boot from a usb drive, press and hold the option (alt) key immediately upon
-hearing the startup chime. release the key after Startup Manager appears.
+on mbnuc: f2 for system setup, f10 to choose boot device, esc for systemd-boot's menu.
 
-when restoring from a backup, don't forget the "sudo": e.g. when pasted into
-a Terminal window, this next works: cd /s; sudo tar xf /dev/rdisk3 ./v/new.
+when pasted into a Terminal window, this next works: cd /s; sudo tar xf 
+/dev/rdisk3 ./v/new. if you run tar as non-root, it will convert the owner of the extracted
+files to the invoking user. if run as root, it will preserve the ownership data in the
+archive (but that behavior can be overridden with flags). 
+
+
 
