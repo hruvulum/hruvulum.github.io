@@ -3,44 +3,65 @@
 this file has the extension "htm" because by default github pages publishes
 only html files
 
+information on the contents of our media kept separate from our computer. vlm0
+
+last updated 2021 Mar 20. all 3 8-giggers and the 16-gigger are currently at
+ewater.
+
+the most recent dup goes here.
+
+the only big partition (partition 3) on hdmm2. btrfs dups made 2021 Mar 20
+and 2021 Mar 18.
+
+partitions 1 and 2 on the nvme drive have dups made 2021 Mar 12 or 13.
+
+8-gig cruzer #3. dup made 2021 Mar 11 using tar.
+
+8-gig cruzer #2. dup made 2020 Apr 20.
+
+also /o/dup/full/ on hdtera contains 8-gig dups. e.g., one made 2020 Apr 14.
+
+the pre-mar 2021 dups were made with `tar cf /dev/rdisk3 -T /c/dupt` unless
+otherwise specified.
+
+8-gig cruzer #1. Silverblue 34 prerelease 2.6-gig install iso.
+
+16-gig tiny stainless drive. Fedora 34 prerelease everything (netinst).
+used to install what I am using now.
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 Model: Samsung SSD 970 EVO Plus 1TB (nvme)
 Disk /dev/nvme0n1: 1000GB
 Sector size (logical/physical): 512B/512B
 Partition Table: gpt
 Disk Flags: 
-Number  Start   End     Size    File system     Name     Flags
- 3      1049kB  1074MB  1073MB  fat32           ESP      boot, esp
- 1      1074MB  987GB   986GB   ext4            primary
- 2      987GB   1000GB  12.9GB  linux-swap(v1)  primary  swap
 
-information on the contents of our media kept separate from our computer. vlm0
+Number  Start   End     Size    File system  Name                  Flags
+ 3      1049kB  1074MB  1073MB  fat32        EFI System Partition  boot, esp
+ 1      1074MB  54.8GB  53.7GB  ext4         nix
+ 4      54.8GB  55.9GB  1100MB  ext4         boot
+ 5      55.9GB  556GB   500GB                btrfs
+ 2      987GB   1000GB  12.9GB  ext4         fulldup
 
-all of these dups were made with `tar cf /dev/rdisk3 -T /c/dupt` unless
-otherwise specified.
+Model: ATA Samsung SSD 840 (scsi)
+Disk /dev/sda: 250GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags: 
 
-8-gig cruzer #1. currently in my book bag in a CVS ctr. bootable fedora workstation 
-33 including gnome and a major browser.
-
-8-gig cruzer #2. dup made 2020 Apr 20. currently at cata.
-
-8-gig cruzer #3. dup made 2019 Nov 11. stored at cata. I tried something new
-and used dd rather than (bsd) tar to write to the backup media. dd took over 8
-hours.
-
-also /o/dup/full/ on hdtera contains 8-gig dups. e.g., one made a few days before mbmm died.
+Number  Start   End     Size    File system  Name                  Flags
+ 1      1049kB  630MB   629MB   fat32        EFI System Partition  boot, esp
+ 2      630MB   1704MB  1074MB  ext4
+ 3      1704MB  250GB   248GB   btrfs
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-on mbnuc: f2 for system setup, f10 to choose boot device, esc for systemd-boot's menu.
-
-when pasted into a Terminal window, this next works: cd /s; sudo tar xf 
-/dev/rdisk3 ./v/new. if you run tar as non-root, it will convert the owner of the extracted
-files to the invoking user. if run as root, it will preserve the ownership data in the
-archive (but that behavior can be overridden with flags). 
-
-
+if you run tar as non-root, it will convert the owner of the extracted files to
+the invoking user. if run as root, it will preserve the ownership data in the
+archive (but that behavior can be overridden with flags).
 
