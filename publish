@@ -1,4 +1,7 @@
-#!/bin/bash
+# 2021 Mar 20. this has a flaw: if we used github.com to edit the repo, then
+# the push command below will prol fail: we prol need to pull before we can
+# successfully push.
+
 # we had `rustdoc *.md -o .` here, but that is wrong because rustdoc can
 # take only one input file.
 git commit -a -m '--'
