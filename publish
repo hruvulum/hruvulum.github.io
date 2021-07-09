@@ -8,3 +8,8 @@
 git commit -a -m '--'
 git push -u origin master
 echo reminder that changes take a few minutes to propagate to the web site
+
+# The files will be published at https://hruvulum.github.io/
+
+# This repo is also available at https://github.com/hruvulum/hruvulum.github.io
+
