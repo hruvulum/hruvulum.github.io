@@ -18,7 +18,7 @@
 
 ;; 2018 Jun 15. I deploy version two. Version one was deployed for many months
 ;; and is now in .retired. 2021 Jul 09. I publish this file: in particular, I
-;; make a copy of this file in /d/pages_my, then I `git push` to Github.
+;; make a copy of this file to /d/pages_my, then I `git push` to Github.
 
 ;; Version one used an idle timer, but that design has the deficiency of not
 ;; being able to detect when emacs _stops_ being idle. We detect that below
@@ -55,7 +55,7 @@
 (defvar gvcit nil)
 (defvar gvnow nil)
 (defun record-idle ()
-     (let (getcit getnow getstart cit data directory entry)
+     (let (data directory getcit getnow getstart cit resolution entry)
 
           ;; The function being defined maintains 3 log files: one named
           ;; (concat "0" "idle") with a resolution of 1 minute (60 seconds),
@@ -63,6 +63,9 @@
           ;; and one named "2idle" with a res of 7 * 7 minutes.
 
           (setq data '((60 "0") (420 "") (2940 "2")))
+
+          ;; Where the 3 log files will go:
+
           (setq directory (expand-file-name "~/"))
 
           ;; It is unusual style to have both GETCIT and GVCIT. It makes more
@@ -93,7 +96,7 @@
                     ;; start. <duration> end.
 
                     (format "%s. <%s> %s.\n\n"
-                         (format-time-string "%H:%M:%S" getstart)
+                         (format-time-string "%Y %b %d %H:%M:%S" getstart)
                          (format-time-string "%H:%M:%S" getcit
                               
                               ;; Since it is the only sensible choice for
