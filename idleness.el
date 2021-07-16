@@ -55,7 +55,7 @@
 (defvar gvcit nil)
 (defvar gvnow nil)
 (defun record-idle ()
-     (let (data directory getcit getnow getstart cit resolution entry)
+     (let (data output-directory getcit getnow getstart cit resolution entry)
 
           ;; The function being defined maintains 3 log files: one named
           ;; (concat "0" "idle") with a resolution of 1 minute (60 seconds),
@@ -63,11 +63,15 @@
           ;; and one named "2idle" with a res of 7 * 7 minutes.
 
           (setq data '((60 "0") (420 "") (2940 "2")))
+          (setq output-directory (if 
 
-          ;; Where the 3 log files will go:
+               ;; The user is Richard, not someone using Richard's file of
+               ;; code:
 
-          (setq directory (expand-file-name "~/"))
-
+               (file-directory-p "/l")
+               (expand-file-name "/g/")
+               (expand-file-name "~/")))
+          
           ;; It is unusual style to have both GETCIT and GVCIT. It makes more
           ;; sense when you understand that GVCIT is analogous to an IORef in
           ;; Haskell and GETCIT is analogous to the contents of that IORef at a
@@ -107,7 +111,8 @@
                          (format-time-string "%H:%M:%S" getnow)
                          . nil))
                (write-region entry nil
-                    (expand-file-name (format "%sidle" (cadr datum)) directory)
+                    (expand-file-name (format "%sidle" (cadr datum)) 
+                         output-directory)
                     
                     ;; append:
                
