@@ -1,7 +1,7 @@
 <pre>
 
 this file has the extension "htm" because I do not know how to configure github
-pages to publish a txt file.
+pages to publish with the extension "txt"..
 
 information on the contents of our media kept separate from our computer. vlm0
 
@@ -10,14 +10,18 @@ gigger are at cata.
 
 the most recent dup goes here.
 
-8-gig cruzer #2. _partial_ dup made 2020 Apr 25: partial because the device
-ran out of space. does not for example contain /v. stored at ewater (in the
-water pik box IIRC).
+2021-07-20. 8-gig cruzer #2. dup of /da made as follows. I used Gnome Files to
+format the entire volume (/dev/sdb, not /dev/sdb2 or such) as LUKS ext4. then I
+made a tarball as follows (advantage: I could check the approximate space
+requirements quickly) then untarred the ball into a subdirectory of the newly
+formatted volume.
 
-the only big partition (partition 3) on hdmm2. btrfs dups made 2021 Mar 23
-and 2021 Mar 20.
+cd / && time sudo tar -c -f da.tar --exclude=dup_btr ./da
 
-partitions 1 and 2 on the nvme drive have dups made 2021 Mar 12 or 13.
+2021-03-23. the only big partition (partition 3) on hdmm2. btrfs dups made 2021
+Mar 23 and 2021 Mar 20.
+
+2021-03-13. partitions 1 and 2 on the nvme drive have dups made 2021 Mar 12 or 13.
 
 8-gig cruzer #3. dup made 2021 Mar 11 using tar.
 
@@ -47,6 +51,16 @@ Number  Start   End     Size    File system  Name                  Flags
  4      54.8GB  55.9GB  1100MB  ext4         boot
  5      55.9GB  556GB   500GB                btrfs
  2      987GB   1000GB  12.9GB  ext4         fulldup
+
+--from cfdisk--
+Device                      Start           End      Sectors      Size
+/dev/nvme0n1p1            2097152     106954752    104857601       50G   
+/dev/nvme0n1p2         1928359344    1953525134     25165791       12G
+/dev/nvme0n1p3               2048       2097151      2095104     1023M
+/dev/nvme0n1p4          106956800     109105239      2148440        1G
+/dev/nvme0n1p5          109107200    1085669699    976562500    465.7G
+Free space             1085671424    1928359343    842687920    401.8G
+--/from cfdisk--
 
 Model: ATA Samsung SSD 840 (scsi)
 Disk /dev/sda: 250GB
