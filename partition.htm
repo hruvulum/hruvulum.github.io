@@ -1,39 +1,40 @@
 <pre>
 
 this file has the extension "htm" because I do not know how to configure github
-pages to publish with the extension "txt"..
+pages to publish with the extension "txt".
 
-information on the contents of our media kept separate from our computer. vlm0
-
-add 2021 Jul 15. all external drives including the 3 8-giggers and the 16
-gigger are at cata.
+information on the contents of our media kept separate from our computer.
 
 the most recent dup goes here.
 
-2021-07-20. 8-gig cruzer #2. dup of /da made as follows. I used Gnome Files to
-format the entire volume (/dev/sdb, not /dev/sdb2 or such) as LUKS ext4. then I
-made a tarball as follows (advantage: I could check the approximate space
-requirements quickly) then untarred the ball into a subdirectory of the newly
-formatted volume. add 2021 Jul 27. at ewater.
+2021-10-03. 8-gig cruzer #1. current location: cata lr. dup of /da. although in
+the future I can prol do better than tar, and although running tar as root
+might've been the wrong move, I used `sudo tar` to make a tarball and then to
+extract the tarball onto a freshly created encrypted ext4 according to the
+method in /c/dup.
+
+2021-07-20. 8-gig cruzer #2. location: ewater (as of 2021 Oct 03). dup of /da
+made by the method described in /c/dup. then I made a tarball as follows
+(advantage: I could check the approximate space requirements quickly) then
+untarred the ball into a subdirectory of the newly formatted volume.
 
     cd / && time sudo tar -c -f da.tar --exclude=dup_btr ./da
 
-2021-03-23. the only big partition (partition 3) on hdmm2. btrfs dups made 2021
-Mar 23 and 2021 Mar 20.
+2021-03-23. the only big partition (partition 3) on hdmm2 (an ssd drive
+currently inside mbnuc). btrfs dups made 2021 Mar 23 and 2021 Mar 20.
 
-2021-03-13. partitions 1 and 2 on the nvme drive have dups made 2021 Mar 12 or 13.
+2021-03-13. partitions 1 and 2 on the nvme drive have dups made 2021 Mar 12 or
+13.
 
-8-gig cruzer #3. dup made 2021 Mar 11 using tar.
+2021-03-11. 8-gig cruzer #3. location: cata lr (as of 2021 Oct 03). dup made
+using tar.
 
-also /o/dup/full/ on hdtera contains 8-gig dups. e.g., one made 2020 Apr 14.
+2021-03-11. the 16-gig tiny stainless drive. Fedora 34 prerelease everything
+(netinst) install iso file. used to install what I am using now.
 
-the pre-mar 2021 dups were made with `tar cf /dev/rdisk3 -T /c/dupt` unless
-otherwise specified.
-
-8-gig cruzer #1. Silverblue 34 prerelease 2.6-gig install iso file.
-
-16-gig tiny stainless drive. Fedora 34 prerelease everything (netinst) install
-iso file. used to install what I am using now.
+2020-11-30. mbmm's /o (1-terabyte hard drive). current location: on the top
+shelf of the hall closet at cata. (ditto the failing original 500-meg hard
+drive of mbmm.) contains 8-gig dups. e.g., one made 2020 Apr 14.
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -80,4 +81,5 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 if you run tar as non-root, it will convert the owner of the extracted files to
 the invoking user. if run as root, it will preserve the ownership data in the
 archive (but that behavior can be overridden with flags).
+
 
