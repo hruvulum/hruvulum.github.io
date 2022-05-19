@@ -8,7 +8,8 @@
 git commit -a -m '--'
 git push -u origin master
 
-# The files will be published at https://hruvulum.github.io/
+# The destination (origin) can be viewed at
+# https://github.com/hruvulum/hruvulum.github.io
 
-# This repo is mirrored at https://github.com/hruvulum/hruvulum.github.io
+# And a "rendered view" of the repository is at https://hruvulum.github.io/
 

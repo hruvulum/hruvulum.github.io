@@ -110,13 +110,23 @@
                               t)
                          (format-time-string "%H:%M:%S" getnow)
                          . nil))
-               (write-region entry nil
-                    (expand-file-name (format "%sidle" (cadr datum)) 
-                         output-directory)
+               (condition-case e
+                    (write-region entry nil
+                         (expand-file-name (format "%sidle" (cadr datum)) 
+                              output-directory)
                     
-                    ;; append:
+                         ;; append:
                
-                    t 'quiet)))
+                         t 'quiet)
+                    (file-missing 
+
+                         ;; on a fresh install on which OUTPUT-DIRECTORY does
+                         ;; not name an existing directory, the user will prol
+                         ;; not want to be bothered by an error message.
+                         ;; certainly I did not in Oct 2021 while configuring
+                         ;; a second install for sensitive tasks.
+
+                         nil))))
           (setq gvnow (current-time)) 
           (setq gvcit cit)
           nil))
