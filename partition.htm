@@ -5,9 +5,14 @@ pages to publish with the extension "txt".
 
 the most recent dup goes here.
 
+2022-07-27. dup of /da to the T7.
+
+2022-07-19. dup of /da to the T7 using the instructions in /c/dup3.
+
 2022-07-15. dup of /da and /oh to Kingston using the instructions in /c/dup3.
 
-2022-07-13. dup to Kingston's /run/media/r/fedora_sensitivf34/home00 using cp -ax. 
+2022-07-13. dup to Kingston's /run/media/r/fedora_sensitivf34/home00 using cp
+-ax.
 
 2022-05-11. dup to 500-gig Samsung T7. when you plug it in, Fedora 34 will ask
 for the passphrase. after you enter it, the backup (made with `cp -ax` on /da/)
@@ -51,13 +56,13 @@ currently inside mbnuc). btrfs dups made 2021 Mar 23 and 2021 Mar 20.
 install iso file. used to install what I am using now.
 
 2020-11-30. mbmm's /o (1-terabyte hard drive). current location: inside the
-nuc8. contains 8-gig dups. e.g., one made 2020 Apr 14.
+nuc 8. contains 8-gig dups. e.g., one made 2020 Apr 14.
 Device          Start        End    Sectors   Size Type
 /dev/sda1          40     409639     409600   200M EFI System
 /dev/sda2      409640 1952255591 1951845952 930.7G Apple HFS/HFS+
 /dev/sda3  1952255592 1953525127    1269536 619.9M Apple boot
 
-the failing original 500-meg hard drive of mbmm. location: top shelf of
+the failing original 500-meg hard drive of mbmm. (hdmm1.) location: top shelf of
 linen closet.
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -87,17 +92,6 @@ Device                      Start           End      Sectors      Size
 Free space             1085671424    1928359343    842687920    401.8G
 --/from cfdisk--
 
-Model: ATA Samsung SSD 840 (scsi)
-Disk /dev/sda: 250GB
-Sector size (logical/physical): 512B/512B
-Partition Table: gpt
-Disk Flags: 
-
-Number  Start   End     Size    File system  Name                  Flags
- 1      1049kB  630MB   629MB   fat32        EFI System Partition  boot, esp
- 2      630MB   1704MB  1074MB  ext4
- 3      1704MB  250GB   248GB   btrfs
-
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -105,4 +99,17 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 if you run tar as non-root, it will convert the owner of the extracted files to
 the invoking user. if run as root, it will preserve the ownership data in the
 archive (but that behavior can be overridden with flags).
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+2022 Jul 15
+
+the f34 install I've been using for prol over 12 mo is at /root-0. and /da is
+/data.
+
+2022 Jul 20
+
+/dev/nvme0n1p4 on /boot type ext4 (rw,relatime,seclabel)
+
+/dev/nvme0n1p3 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro)
 
