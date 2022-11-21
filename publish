@@ -1,15 +1,1 @@
-# 2021 Mar 20. this prol has a flaw: if we used github.com to edit the repo,
-# then the push command below will prol fail: we prol need to pull before we
-# can successfully push.
-
-# we had `rustdoc *.md -o .` here, but that is wrong because rustdoc can
-# take only one input file.
-
-git commit -a -m '--'
-git push -u origin master
-
-# The remote (origin) can be viewed at
-# https://github.com/hruvulum/hruvulum.github.io
-
-# And a "rendered view" of the repository is at https://hruvulum.github.io/
-
+echo ignored. now say M-x run
