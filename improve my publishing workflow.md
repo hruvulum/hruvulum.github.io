@@ -1,9 +1,4 @@
-2019 Nov 09
 
-https://gankra.github.io/blah/swift-abi/ // How Swift Achieved Dynamic Linking Where Rust Couldn't. Alexis Beingessner ;; a simple unadorned web page with css and typographical choices I highly approve of. add. sadly its implementation is more complicated than I would like:
-$ wc -c blah/bootstrap*.css
-105948 blah/bootstrap.min.css
-16858 blah/bootstrap-responsive.min.css
 
 rustdoc have: --markdown-no-toc
 
@@ -20,4 +15,14 @@ do: we put <link rel="stylesheet" href="basic.css"> in a HEADER element (not HEA
 2020 Jun 02.
 
 https://news.ycombinator.com/item?id=23391110 ;; this made me believe that I should switch to Gitlab Pages.
+
+2026 May 25.
+
+background: since Thanksgiving last year or earlier, I've been maintaining my newtab.htm using github.com in the browser. during that time, my puter has never even been configured to allow me to git push to github.
+
+instead of adding a file to this repo, to publish a static web page, consider using a Gist, e.g., this next page. if you give the Gist the extension "md" Github will automatically soft-wrap the lines and make any URLs clickable even if the file is plain text without any markdown syntax.
+
+https://gist.github.com/hruvulum/ac9774ae322d958c46532804a5d01393
+
+
 
