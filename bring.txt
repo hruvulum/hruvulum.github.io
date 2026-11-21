@@ -23,6 +23,15 @@ bezos pw is breakfast followed the old pw of 6 char.
 
 lyn cell 628 252-0454
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Install the Dropbox app on your iPad and sign in. In the Files app, if Dropbox isn’t listed under Locations, tap the sidebar’s … menu, choose Edit Sidebar, and turn on Dropbox. Then in Textastic, tap Add External Folder…, select your Dropbox folder, and tap Open. Edits save back to Dropbox and should sync to Bluefin once Dropbox sync is running there. Use the external folder rather than Textastic’s separate Dropbox File Transfer connection, which is for manual uploads and downloads.
+
+remember: the menu containing "select" and "select all" also contains "open with" when point is in a URL in textastic.
+
+/civ. about 5 oz of cooked ch. garbanzo 1 unopened and 0.7 opened. no fennel or r
+
+
 
 
 
